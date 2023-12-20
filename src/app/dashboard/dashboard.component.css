@@ -1,0 +1,31 @@
+/* dashboard.component.css */
+:host {
+    display: block;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  p {
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+  }
+  

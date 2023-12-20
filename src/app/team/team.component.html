@@ -1,0 +1,25 @@
+<div>
+    <h3>{{ team.name }} ({{ team.players.length }})</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Add</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let player of team.players">
+          <td><input type="text" [(ngModel)]="player.name"></td>
+          <td><input type="number" [(ngModel)]="player.age"></td>
+          <td><button (click)="savePlayer(player)">Save</button></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="New Player Name" #newName></td>
+            <td><input type="text" placeholder="New Player Age" #newAge></td>
+            <td><button (click)="addNewPlayer(newName.value, newAge.value)">Add</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

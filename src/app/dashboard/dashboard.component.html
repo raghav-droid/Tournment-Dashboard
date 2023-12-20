@@ -1,0 +1,15 @@
+<div *ngIf="tournamentData">
+    <div *ngFor="let sport of tournamentData">
+      <h2>{{ sport.sport }}</h2>
+      <div *ngFor="let team of sport.teams">
+        <h3>{{ team.name }}</h3>
+        <ul>
+          <li *ngFor="let player of team.players">
+            {{ player.name }} - {{ player.age }}
+          </li>
+        </ul>
+        <p>Total Players: {{ team.players.length }}</p>
+      </div>
+    </div>
+  </div>
+  
